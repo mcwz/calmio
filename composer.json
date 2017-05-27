@@ -1,0 +1,16 @@
+{
+    "name": "mcwz/calmio",
+    "description": "a php simple framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sheld",
+            "email": "yali114@sina.com"
+        }
+    ],
+    "require": {
+        "klein/klein": "^2.1",
+        "hassankhan/config": "^0.10.0"
+    }
+}
