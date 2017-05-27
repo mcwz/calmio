@@ -1,17 +1,16 @@
 <?php
 namespace Sys;
 
-class AppLine
+class App
 {
     private $appPath;
 
     public function __construct()
     {
         $this->appPath=APP_PATH;
-        $this->line();
     }
 
-    private function line()
+    public function run()
     {
         
     }

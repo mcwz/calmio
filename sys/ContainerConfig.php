@@ -9,5 +9,6 @@ return [
 //        return new Twig_Environment($loader);
 //    },
     'Config' => new \Noodlehaus\Config([APP_PATH.'config/config.php', APP_PATH.'config/database.php']),
-    'Route' => new \Klein\Klein()
+    'Route' => new \Klein\Klein(),
+    'App'=>new \Sys\App()
 ];
