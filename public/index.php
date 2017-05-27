@@ -5,16 +5,5 @@ define('APP_PATH',ROOT.'app/');
 define('SYS_PATH',ROOT.'sys/');
 require ROOT.'vendor/autoload.php';
 
-$conf = Noodlehaus\Config::load([APP_PATH.'config.php',APP_PATH.'database.php']);
-
-$klein = new \Klein\Klein();
-
-$klein->respond('GET', '/hello-world', function () {
-    return 'Hello World!';
-});
-
-$klein->respond('GET', '/', function () {
-    return 'Hello '.time().'!';
-});
-
-$klein->dispatch();
+$boot=new \Sys\BootStrap();
+$container=$boot->boot();
