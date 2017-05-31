@@ -1,14 +1,20 @@
 <?php
-use function DI\object;
-return [
-//    // Bind an interface to an implementation
-//    ArticleRepository::class => object(InMemoryArticleRepository::class),
-//    // Configure Twig
-//    Twig_Environment::class => function () {
-//        $loader = new Twig_Loader_Filesystem(__DIR__ . '/../src/SuperBlog/Views');
-//        return new Twig_Environment($loader);
-//    },
-    'Config' => new \Noodlehaus\Config([APP_PATH.'config/config.php', APP_PATH.'config/database.php']),
-    'Route' => new \Klein\Klein(),
-    'App'=>new \Sys\App()
-];
+namespace Sys;
+
+
+abstract class ContainerConfig implements ContainerConfigInterface
+{
+    protected $container;
+    public function setContainer($container)
+    {
+        if($this->container==null)
+            $this->container=$container;
+    }
+
+    public abstract function config();
+
+    public function getContainer()
+    {
+        return $this->container;
+    }
+}

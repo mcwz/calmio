@@ -2,16 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: sheld
- * Date: 2017/5/27
- * Time: 15:37
+ * Date: 2017/5/31
+ * Time: 17:13
  */
 
 namespace Sys;
 
 
-interface RouterInterface
+interface RouterConfigInterface
 {
     public function setRouter($router);
-    public function processRouter();
     public function getRouter();
 }

@@ -7,4 +7,4 @@ require ROOT.'vendor/autoload.php';
 
 $boot=new \Sys\BootStrap();
 $container=$boot->boot();
-$container->get('App')->run();
+//echo $container->get('config')->get('version');
