@@ -9,10 +9,7 @@ class Router extends \Sys\RouterConfig
 
     public function config()
     {
-        $this->router->map('GET', '/', function (ServerRequestInterface $request, ResponseInterface $response) {
-            $response->getBody()->write('<h1>Hello, World!</h1>');
-
-            return $response;
-        });
+        $this->router->map('GET', '/test', 'App\Controllers\Test::testing');
+        //$this->router->map('GET','/test','App\Controllers\Test::testing');
     }
 }
