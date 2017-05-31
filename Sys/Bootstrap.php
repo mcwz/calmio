@@ -1,9 +1,7 @@
 <?php
 namespace Sys;
 
-
-
-class BootStrap
+class Bootstrap
 {
     public function boot()
     {

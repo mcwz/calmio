@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Sys\\": "sys/",
+      "Sys\\": "Sys/",
       "App\\": "App/"
     }
   }

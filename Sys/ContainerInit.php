@@ -14,7 +14,7 @@ class ContainerInit
 
     private function define()
     {
-        $this->container->add('config', new \Noodlehaus\Config([APP_PATH . 'config/config.php', APP_PATH . 'config/database.php']));
+        $this->container->add('config', new \Noodlehaus\Config([APP_PATH . 'Config/Config.php', APP_PATH . 'Config/Database.php']));
 
         $this->container->add('router', new \App\Config\Router());
 
