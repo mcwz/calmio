@@ -4,11 +4,11 @@ namespace App\Controllers;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class Test
+class Home
 {
-    public function testing(ServerRequestInterface $request, ResponseInterface $responds)
+    public function index(ServerRequestInterface $request, ResponseInterface $responds)
     {
-        $responds->getBody()->write("hello wo");
+        $responds->getBody()->write("hello , I'm calmio .");
         return $responds;
     }
 }

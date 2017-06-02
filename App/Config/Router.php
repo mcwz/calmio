@@ -9,7 +9,6 @@ class Router extends \Sys\RouterConfig
 
     public function config()
     {
-        $this->router->map('GET', '/test', 'App\Controllers\Test::testing');
-        //$this->router->map('GET','/test','App\Controllers\Test::testing');
+        $this->router->map('GET', '/', 'App\Controllers\Home::index');
     }
 }

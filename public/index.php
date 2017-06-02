@@ -7,4 +7,3 @@ require ROOT.'vendor/autoload.php';
 
 $boot=new \Sys\Bootstrap();
 $container=$boot->boot();
-//echo $container->get('config')->get('version');
