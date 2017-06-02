@@ -25,6 +25,8 @@ class ContainerInit
             );
         });
 
+        $this->container->add('view', new \League\Plates\Engine(APP_PATH.'View/'));
+
         $this->container->share('emitter', \Zend\Diactoros\Response\SapiEmitter::class);
 
         $route = new \League\Route\RouteCollection($this->container);
@@ -56,4 +58,5 @@ class ContainerInit
         }
 
     }
+
 }
