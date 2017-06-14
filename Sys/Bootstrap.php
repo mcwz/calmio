@@ -5,7 +5,6 @@ class Bootstrap
 {
     public function boot()
     {
-        $containerInit=new ContainerInit();
-        return $containerInit->getContainer();
+        return Service::get_container();
     }
 }
